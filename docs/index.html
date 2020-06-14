@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>vue-dark-mode-switch - VueJS Dark mode switch component</title>
+        <meta name="description" content="vue-dark-mode-switch is a beautiful switch for dark mode theme switching."/>
+
+        <link href="https://fonts.googleapis.com/css?family=K2D:300,400,500,700,800" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+    </head>
+    <body>
+        
+        <section class="bg-gradient pt-5 pb-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-row align-items-center justify-content-between">
+                        <div class="heading-brand">vue-dark-mode-switch</div>
+                        <a href="https://www.npmjs.com/package/throttler-js" class="btn btn-dark" target="_blank">
+                            <i class="fab fa-npm"></i>
+                            Download
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-6">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h1>VueJS Dark mode switch component</h1>
+                        <p class="lead mb-5">
+                            vue-dark-mode-switch is a beautiful switch for dark mode theme switching.
+                        </p>
+                        <a href="https://github.com/ismailnguyen/vue-dark-mode-switch" class="btn btn-success">
+                            <i class="fab fa-github"></i>
+                            Contribute
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-9 mx-auto">
+                        <div class="code-window">
+                            <div class="dots">
+                                <div class="red"></div>
+                                <div class="orange"></div>
+                                <div class="green"></div>
+                            </div>
+                            <pre class="language-javascript line-numbers"><code class="language-html">&lt;template&gt;
+    &lt;DarkModeSwitch @switched="onSwitched" /&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+    import DarkModeSwitch from './components/DarkModeSwitch.vue'
+
+    export default {
+        components: {
+            DarkModeSwitch
+        },
+        methods: {
+            onSwitched: function (isSwitched) {
+                console.log('dark mode is enabled :', isSwitched);
+            }
+        }
+    }
+&lt;/script&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="http://www.wtfpl.net">Licence</a></li>
+                            <li class="list-inline-item"><a href="https://www.npmjs.com/package/vue-dark-mode-switch">Install package</a></li>
+                            <li class="list-inline-item"><a href="https://github.com/ismailnguyen/vue-dark-mode-switch">Fork on GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-md-4 mx-auto text-muted text-center small-xl">
+                        &copy; 2020 vue-dark-mode-switch - All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script scr="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    </body>
+</html>

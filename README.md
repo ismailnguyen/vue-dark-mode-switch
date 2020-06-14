@@ -1,12 +1,12 @@
 # vue-dark-mode-switch
+VueJS Dark mode switch component
 
 ## Install
-```
+```shell
 npm install --save vue-dark-mode-switch
 ```
 
-### Usage
-
+## Usage
 Import the `DarkModeSwitch` component, and it will emit its state through `@switched` event method.
 
 ```html
