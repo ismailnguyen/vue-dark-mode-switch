@@ -19,9 +19,10 @@
 
 <script>
     export default {
+        props: ['initialState'],
         data () {
             return {
-                isEnabled: false
+                isEnabled: initialState || false
             }
         },
         watch: {
