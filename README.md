@@ -29,3 +29,13 @@ Import the `DarkModeSwitch` component, and it will emit its state through `@swit
 	}
 </script>
 ```
+
+## Demo
+
+Live : [https://www.ismailnguyen.com](https://www.ismailnguyen.com)
+
+### Switch Off
+![Switch Off](https://raw.githubusercontent.com/ismailnguyen/vue-dark-mode-switch/master/docs/assets/switch_off.png)
+
+### Switch On
+![Switch On](https://raw.githubusercontent.com/ismailnguyen/vue-dark-mode-switch/master/docs/assets/switch_on.png)
