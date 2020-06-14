@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <DarkModeSwitch :switched="onSwitched"/>
+    <DarkModeSwitch @switched="onSwitched"/>
   </div>
 </template>
 
@@ -13,8 +13,8 @@
 			DarkModeSwitch
 		},
 		methods: {
-			onSwitched: function () {
-				console.log('dark mode enabled !')
+			onSwitched: function (isSwitched) {
+				console.log('dark mode is enabled :', isSwitched);
 			}
 		}
 	}
