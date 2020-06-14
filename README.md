@@ -8,16 +8,23 @@ npm install --save vue-dark-mode-switch
 
 ## Usage
 Import the `DarkModeSwitch` component, and it will emit its state through `@switched` event method.
+`initalState` props allow to initialize the switch value (optional, default value is false).
 
 ```html
 <template>
-    <DarkModeSwitch @switched="onSwitched" />
+    <DarkModeSwitch @switched="onSwitched" :initialState="isDarkModeEnabled" />
 </template>
 
 <script>
-	import DarkModeSwitch from './components/DarkModeSwitch.vue'
+	import DarkModeSwitch from 'vue-dark-mode-switch'
+    import 'vue-dark-mode-switch/dist/vue-dark-mode-switch.css'
 
 	export default {
+		data () {
+            return {
+                isDarkModeEnabled: true
+            }
+        },
 		components: {
 			DarkModeSwitch
 		},

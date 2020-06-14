@@ -45,14 +45,20 @@
                                 <div class="green"></div>
                             </div>
                             <pre class="language-javascript line-numbers"><code class="language-html">&lt;template&gt;
-    &lt;DarkModeSwitch @switched="onSwitched" /&gt;
+    &lt;DarkModeSwitch @switched="onSwitched" :initialState="isDarkModeEnabled" /&gt;
 &lt;/template&gt;
 
 &lt;script&gt;
-    import DarkModeSwitch from './components/DarkModeSwitch.vue'
+    import DarkModeSwitch from 'vue-dark-mode-switch'
+    import 'vue-dark-mode-switch/dist/vue-dark-mode-switch.css'
 
     export default {
-        components: {
+        data () {
+            return {
+                isDarkModeEnabled: true
+            }
+        },
+		components: {
             DarkModeSwitch
         },
         methods: {
