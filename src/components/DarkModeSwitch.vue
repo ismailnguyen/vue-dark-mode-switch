@@ -22,7 +22,7 @@
         props: ['initialState'],
         data () {
             return {
-                isEnabled: initialState || false
+                isEnabled: this.initialState || false
             }
         },
         watch: {
