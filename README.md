@@ -1,24 +1,31 @@
 # vue-dark-mode-switch
 
-## Project setup
+## Install
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npm install --save vue-dark-mode-switch
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Usage
 
-### Lints and fixes files
-```
-npm run lint
-```
+Import the `DarkModeSwitch` component, and it will emit its state through `@switched` event method.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```html
+<template>
+    <DarkModeSwitch @switched="onSwitched" />
+</template>
+
+<script>
+	import DarkModeSwitch from './components/DarkModeSwitch.vue'
+
+	export default {
+		components: {
+			DarkModeSwitch
+		},
+		methods: {
+			onSwitched: function (isSwitched) {
+				console.log('dark mode is enabled :', isSwitched);
+			}
+		}
+	}
+</script>
+```
