@@ -1,11 +1,11 @@
 {
   "name": "vue-dark-mode-switch",
   "short_description": "VueJS Dark mode switch component",
-  "description": "vue-dark-mode-switch is a beautiful switch for dark mode theme switching.", 
-  "version": "1.0.7",
+  "description": "vue-dark-mode-switch is a beautiful switch for dark mode theme switching.",
+  "version": "1.1.0",
   "author": "Ismaïl NGUYEN <nguyen.ismail@gmail.com>",
   "repository": "https://github.com/ismailnguyen/vue-dark-mode-switch.git",
-   "license": "Under WTFPL licence",
+  "license": "Under WTFPL licence",
   "license_url": "http://www.wtfpl.net",
   "main": "./dist/vue-dark-mode-switch.common.js",
   "scripts": {
